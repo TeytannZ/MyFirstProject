@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Formulaire</title>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td><pre></pre></td>
+          <td>
+            <label for="Monsieur">Civilite</label>
+          </td>
+          <td>
+            <div align="left">
+              <input type="radio" name="old" id="Medomoiselle" />
+              <label for="Medomoiselle">Medomoiselle</label>
+
+              <input type="radio" name="old" id="Madame" />
+              <label for="Madame">Madame</label>
+
+              <input type="radio" name="old" id="Monsieur" checked />
+              <label for="Monsieur">Monsieur</label>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><pre></pre></td>
+          <td>Nom/Prenom</td>
+          <td>
+            <label width></label>
+            <input type="text" name="Nom/Prenom" id="Nom/Prenom" size="55" />
+          </td>
+        </tr>
+        <tr>
+          <td><pre></pre></td>
+          <td>Address</td>
+          <td>
+            <!-- <input type="text" name="Address" id="Address" /> -->
+            <textarea
+              placeholder="Rue No Boite possible"
+              name=""
+              id=""
+              minlength="60px"
+              cols="60"
+              rows="2"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><pre></pre></td>
+          <td>No Postal/<br />Localite</td>
+          <td>
+            <div>
+              <input type="number" width="8px" />
+              <input type="text" size="10" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><pre></pre></td>
+          <td>Pays</td>
+          <td>
+            <select name="" id="US">
+              <option value="tn" selected>Tunisia</option>
+              <option value="FR">France</option>
+              <option value="GE">Germani</option>
+              <option value="US">US</option>
+              <option value="UK">UK</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Platforme<small>(</small>s<small>)</small></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Application <br /><small>(</small>s<small>)</small></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
