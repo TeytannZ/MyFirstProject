@@ -1,89 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Les Formulaire</title>
-  </head>
-  <body>
-    <table>
-      <tbody>
-        <tr>
-          <td><pre></pre></td>
-          <td>
-            <label for="Monsieur">Civilite</label>
-          </td>
-          <td>
-            <div align="left">
-              <input type="radio" name="old" id="Medomoiselle" />
-              <label for="Medomoiselle">Medomoiselle</label>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table align="center"  cellpadding="10">
 
-              <input type="radio" name="old" id="Madame" />
-              <label for="Madame">Madame</label>
+        <!------------------------------ligne-1--------------------------------->
+        <tr>
+            <td>Civilite</td>
+            <td>
+                <input type="radio" name="same_name" id="id_1">
+                <label for="id_1">Mademoiselle</label>
 
-              <input type="radio" name="old" id="Monsieur" checked />
-              <label for="Monsieur">Monsieur</label>
-            </div>
-          </td>
+                <input type="radio" name="same_name" id="id_2">
+                <label for="id_2">Madame</label>
+
+                <input type="radio" name="same_name" id="id_3" checked>
+                <label for="id_3">Monsieur</label>
+            </td>
+        </tr>
+            
+        <!------------------------------ligne-2--------------------------------->
+        <tr>
+            <td>Nom / Prenom</td>
+            <td>
+                <input type="text" size="50">
+            </td>
         </tr>
 
+        <!------------------------------ligne-3--------------------------------->
         <tr>
-          <td><pre></pre></td>
-          <td>Nom/Prenom</td>
-          <td>
-            <label width></label>
-            <input type="text" name="Nom/Prenom" id="Nom/Prenom" size="55" />
-          </td>
+            <td>Adresse</td>
+            <td>
+                <textarea placeholder="Rue No Boite postale" cols="60" rows="2"></textarea>
+            </td>
         </tr>
+
+        <!------------------------------ligne-4--------------------------------->
         <tr>
-          <td><pre></pre></td>
-          <td>Address</td>
-          <td>
-            <!-- <input type="text" name="Address" id="Address" /> -->
-            <textarea
-              placeholder="Rue No Boite possible"
-              name=""
-              id=""
-              minlength="60px"
-              cols="60"
-              rows="2"
-            ></textarea>
-          </td>
+            <td>No postal / Localite</td>
+            <td>
+                <input type="number" size="5" min="0000" max="9999">
+                <input type="text" size="20" value="Jendouba">
+            </td>
         </tr>
+
+        <!------------------------------ligne-5--------------------------------->
+
         <tr>
-          <td><pre></pre></td>
-          <td>No Postal/<br />Localite</td>
-          <td>
-            <div>
-              <input type="number" width="8px" />
-              <input type="text" size="10" />
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><pre></pre></td>
           <td>Pays</td>
           <td>
-            <select name="" id="US">
-              <option value="tn" selected>Tunisia</option>
-              <option value="FR">France</option>
-              <option value="GE">Germani</option>
-              <option value="US">US</option>
-              <option value="UK">UK</option>
+            <select  name="" id="US">
+                <option value="tn" selected>Tunisia</option>
+                <option value="FR">France</option>
+                <option value="GE">Germani</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
             </select>
           </td>
         </tr>
+        <td>Platforme<small>(</small>s<small>)</small></td>
+
+        <!------------------------------ligne-6--------------------------------->
         <tr>
-          <td></td>
-          <td>Platforme<small>(</small>s<small>)</small></td>
-          <td></td>
-        </tr>
+          <td>Plateforme<small>(</small>s<small>)</small></td>
+          <td>
+              <input type="checkbox" checked id="id-1">
+              <label for="id-1">Windows</label>
+
+              <input type="checkbox" checked id="id-2">
+              <label for="id-2">Macintosh</label>
+
+              <input type="checkbox" id="id-3">
+              <label for="id-3">Unix</label>
+          </td>
+      </tr>
+
+      <!------------------------------ligne-7--------------------------------->
         <tr>
-          <td></td>
+
           <td>Application <br /><small>(</small>s<small>)</small></td>
-          <td></td>
+          <td>
+            <select multiple size="5" >
+              <option value="1" selected>Bureatique</option>
+              <option value="2">DAO</option>
+              <option value="3">Statistiques</option>
+              <option value="4">SGBD</option>
+              <option value="5" selected>Internet</option>
+            </select>
+          </td>
         </tr>
-      </tbody>
+
+      <!------------------------------ligne-8--------------------------------->
+        <tr>
+          <td colspan="2" align="center">
+              <input type="submit" value="Soumettre formulaire">
+              <input type="reset"  name="reset" value="Effacer">
+          </td>
+      </tr>
+
     </table>
+
   </body>
 </html>

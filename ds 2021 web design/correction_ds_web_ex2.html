@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table align="center" cellpadding="10">
+
+        <!------------------------------ligne-1--------------------------------->
+        <tr>
+            <td>Civilite</td>
+            <td>
+                <input type="radio" name="same_name" id="id_1">
+                <label for="id_1">Mademoiselle</label>
+
+                <input type="radio" name="same_name" id="id_2">
+                <label for="id_2">Madame</label>
+
+                <input type="radio" name="same_name" id="id_3" checked>
+                <label for="id_3">Monsieur</label>
+            </td>
+        </tr>
+            
+        <!------------------------------ligne-2--------------------------------->
+        <tr>
+            <td>Nom / Prenom</td>
+            <td>
+                <input type="text" size="50">
+            </td>
+        </tr>
+
+        <!------------------------------ligne-3--------------------------------->
+        <tr>
+            <td>Adresse</td>
+            <td>
+                <textarea placeholder="Rue No Boite postale" cols="60" rows="2"></textarea>
+            </td>
+        </tr>
+
+        <!------------------------------ligne-4--------------------------------->
+        <tr>
+            <td>No postal / Localite</td>
+            <td>
+                <input type="number" min="0000" max="9999">
+                <input type="text" size="20" value="Jendouba">
+            </td>
+        </tr>
+
+        <!------------------------------ligne-5--------------------------------->
+        <tr>
+            <td>Pays</td>
+            <td>
+                <select>
+                    <option value="1">Tunisie</option>
+                    <option value="2">KSA</option>
+                    <option value="3">Jordan</option>
+                    <option value="4">Pakistan</option>
+                </select>
+            </td>
+        </tr>
+
+        <!------------------------------ligne-6--------------------------------->
+        <tr>
+            <td>Plateforme(s)</td>
+            <td>
+                <input type="checkbox" checked id="id-1">
+                <label for="id-1">Windows</label>
+
+                <input type="checkbox" checked id="id-2">
+                <label for="id-2">Macintosh</label>
+
+                <input type="checkbox" id="id-3">
+                <label for="id-3">Unix</label>
+            </td>
+        </tr>
+
+        <!------------------------------ligne-7--------------------------------->
+        <td>Application(s)</td>
+        <td>
+            <select multiple size="5">
+                <option value="1" selected>Bureautique</option>
+                <option value="2">DAO</option>
+                <option value="3">Statistiques</option>
+                <option value="4">SGBD</option>
+                <option value="5" selected>Internet</option>
+            </select>
+        </td>
+
+        <!------------------------------ligne-8--------------------------------->
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Soumettre formulaire">
+                <input type="reset"  name="reset" value="Effacer">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
